@@ -2,19 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@300;600&display=swap');
+
 .bg-with-image {
   background-image: url('../public/pattern3.jpg');
   background-size: cover;
 }
 
 .background {
-  background-color:#f0efed;
+  background-color: #f0efed;
 }
 
 .highlight {
   color: #f93700;
 }
 
+.dark-blue {
+  color: '#1f1f31'
+}
+/* .dark-blue {
+  color: '#0b0c1b'
+} */
+/* .dark-blue {
+  color: '#1e1d2e'
+} */
+
 body {
   color: #1f2022;
+  background-color: #f0efed;
 }
