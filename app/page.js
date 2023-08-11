@@ -61,10 +61,8 @@ export default function Home() {
     <div className='flex flex-col w-screen background'>
       <div className='border border-slate-800 flex flex-row h-90vh'>
         <div className='px-12 flex flex-col w-4/6 border-r border-slate-800'>
-          <motion.div
-            initial={{ opacity: 0, y: -100 }}
-            animate={{ opacity: 1, y: 1 }}
-            transition={{ duration: 0.3 }}
+          <div
+     
             className='py-24'
           >
             <h2 className='text-2xl font-light'>
@@ -76,12 +74,12 @@ export default function Home() {
               <span className='font-normal text-yellow-600'>means</span> so you
               can answer specific questions about health.
             </h2>
-          </motion.div>
+          </div>
 
           <motion.div
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 1 }}
-            transition={{ duration: 0.3, delay: 0.6 }}
+            transition={{ duration: 0.3, delay: 0.4 }}
             className='py-8 top-0 sticky z-40 background'
           >
             <h1 className='font-victor text-6xl  text-yellow-600'>
@@ -91,10 +89,8 @@ export default function Home() {
               Medical Content Researcher
             </h1>
           </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: -100 }}
-            animate={{ opacity: 1, y: 1 }}
-            transition={{ duration: 0.3, delay: 1.2 }}
+          <div
+       
             className='py-24'
           >
             <h2 className='text-2xl font-light'>
@@ -102,7 +98,7 @@ export default function Home() {
               everyday language. I work for writers and individuals with a
               vested interest in what the studies mean for life on the ground.
             </h2>
-          </motion.div>
+          </div>
         </div>
         <div className='w-2/6 bg-with-image  flex items-center justify-center'></div>
       </div>
