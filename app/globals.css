@@ -31,3 +31,12 @@ body {
   color: #1f2022;
   background-color: #f0efed;
 }
+
+.contact:hover p {
+  display: none
+}
+
+.contact:hover:before {
+  content: "reasearcher@hilarywatts.com";
+  font-size: 20px;
+}

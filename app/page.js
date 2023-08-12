@@ -1,12 +1,6 @@
 'use client';
 import { useRef } from 'react';
-import {
-  motion,
-  useScroll,
-  useSpring,
-  useTransform,
-  stagger,
-} from 'framer-motion';
+import { motion, useScroll, useSpring, inView, stagger } from 'framer-motion';
 
 const titles = [
   {
@@ -20,25 +14,20 @@ const titles = [
   { title: 'Marriage & Family Therapist trainee', years: '01yr' },
 ];
 
-function useParallax(value, start, end) {
-  return useTransform(value, [0, 1], [start, end]);
-}
-
 function Title({ item }) {
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll(ref);
-
-  const y = useParallax(scrollYProgress, -10, 0); // Adjust the start and end values
+  const ref = useRef(null); // Adjust the start and end values
 
   return (
     <section className='flex flex-row border-b border-slate-800'>
       <div className='flex flex-row max-w-2xl p-7'>
         <h1 className='text-2xl font-extralight'>{item.title}</h1>
       </div>
-      <div className='flex flex-row pt-6' ref={ref}>
+      <div className='flex flex-row pt-7' ref={ref}>
         <motion.h2
+          initial={{ opacity: 0, y: -80 }}
+          whileInView={{ opacity: 1, y: 1 }}
+          transition={{ duration: 0.3, delay: 0.8 }}
           className='text-2xl font-victor text-yellow-600'
-          style={{ y }}
         >
           {item.years}
         </motion.h2>
@@ -61,10 +50,7 @@ export default function Home() {
     <div className='flex flex-col w-screen background'>
       <div className='border border-slate-800 flex flex-row h-90vh'>
         <div className='px-12 flex flex-col w-4/6 border-r border-slate-800'>
-          <div
-     
-            className='py-24'
-          >
+          <div className='py-24'>
             <h2 className='text-2xl font-light'>
               Medical research is{' '}
               <span className='font-normal text-yellow-600'>hard</span> to
@@ -80,7 +66,7 @@ export default function Home() {
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 1 }}
             transition={{ duration: 0.3, delay: 0.4 }}
-            className='py-8 top-0 sticky z-40 background'
+            className='py-6 top-0 sticky z-40 background'
           >
             <h1 className='font-victor text-6xl  text-yellow-600'>
               Hilary Watts
@@ -89,10 +75,7 @@ export default function Home() {
               Medical Content Researcher
             </h1>
           </motion.div>
-          <div
-       
-            className='py-24'
-          >
+          <div className='py-24'>
             <h2 className='text-2xl font-light'>
               I compile high-quality medical research and summarize it in
               everyday language. I work for writers and individuals with a
@@ -143,15 +126,20 @@ export default function Home() {
         <h2 className='text-4xl font-victor'>
           Find out how I can help you put the best evidence into context.
         </h2>
-        <a
-          className='flex justify-center items-center border w-1/4 mt-8 relative p-6 border-solid border-r-4 border-b-4 dark-blue hover:bg-blue-500 transition duration-300 ease-in-out'
+        <motion.a
+          initial={{ opacity: 0, y: -100 }}
+          whileInView={{ opacity: 1, y: 1 }}
+          transition={{ duration: 0.3, delay: 0.8 }}
+          className='contact h-16 flex justify-center items-center border w-1/4 mt-16 relative p-6 border-solid border-r-4 border-b-4 border-slate-800 hover:border-yellow-600 '
           href='#'
         >
-          <p className='text-2xl font-light'>Contact Me</p>
-        </a>
+          <p className='text-2xl font-light font-victor text-yellow-600'>
+            Contact Me
+          </p>
+        </motion.a>
       </div>
-      <div className='flex justify-self-end border-t border-slate-800 px-12'>
-        <p className='my-5'>website by oshafoster.com</p>
+      <div className='flex justify-self-end justify-center border-t border-slate-800 px-12'>
+        <p className='my-3'>website by osha foster</p>
       </div>
     </div>
   );
