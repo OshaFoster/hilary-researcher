@@ -1,7 +1,7 @@
 'use client';
 import { useRef } from 'react';
 import { motion, useScroll, useSpring, inView, stagger } from 'framer-motion';
-
+import CustomCursor from './components/customCursor';
 const titles = [
   {
     title: 'Medical content researcher and reviewer for The Ruscio Institute',
@@ -19,7 +19,7 @@ function Title({ item }) {
 
   return (
     <section className='flex flex-row border-b border-slate-800'>
-      <div className='flex flex-row max-w-2xl p-7'>
+      <div className='flex flex-wrap flex-row max-w-2xl p-7'>
         <h1 className='text-2xl font-extralight'>{item.title}</h1>
       </div>
       <div className='flex flex-row pt-7' ref={ref}>
@@ -47,7 +47,9 @@ export default function Home() {
   // animate in name and titme using frame motion
 
   return (
-    <div className='flex flex-col w-screen background'>
+    <>
+    <CustomCursor/>
+    <div className='flex flex-col w-screen bg-zinc-50'>
       <div className='border border-slate-800 flex flex-row h-90vh'>
         <div className='px-12 flex flex-col w-4/6 border-r border-slate-800'>
           <div className='py-24'>
@@ -61,12 +63,12 @@ export default function Home() {
               can answer specific questions about health.
             </h2>
           </div>
-
+{/* fix stickythis is spilling into the next div bug */}
           <motion.div
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 1 }}
             transition={{ duration: 0.3, delay: 0.4 }}
-            className='py-6 top-0 sticky z-40 background'
+            className='py-6 top-0 sticky z-40 bg-zinc-50 my-1'
           >
             <h1 className='font-victor text-6xl  text-yellow-600'>
               Hilary Watts
@@ -123,7 +125,7 @@ export default function Home() {
       </div>
 
       <div className='flex h-screen flex-col justify-center items-center '>
-        <h2 className='text-4xl font-victor'>
+        <h2 className='text-3xl font-victor'>
           Find out how I can help you put the best evidence into context.
         </h2>
         <motion.a
@@ -142,5 +144,6 @@ export default function Home() {
         <p className='my-3'>website by osha foster</p>
       </div>
     </div>
+    </>
   );
 }
