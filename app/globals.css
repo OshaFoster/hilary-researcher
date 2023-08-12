@@ -13,10 +13,6 @@
   background-color: #f0efed;
 }
 
-.highlight {
-  color: #f93700;
-}
-
 .dark-blue {
   color: '#1f1f31'
 }
@@ -39,4 +35,15 @@ body {
 .contact:hover:before {
   content: "reasearcher@hilarywatts.com";
   font-size: 20px;
+}
+
+.custom-cursor {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: fixed;
+  background-color: #2d2b3f;
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* Ensure the cursor doesn't interfere with mouse interactions */
+  z-index: 9999; /* Bring the cursor above other elements */
 }
