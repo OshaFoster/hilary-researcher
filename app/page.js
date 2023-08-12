@@ -27,7 +27,7 @@ function Title({ item }) {
           initial={{ opacity: 0, y: -80 }}
           whileInView={{ opacity: 1, y: 1 }}
           transition={{ duration: 0.3, delay: 0.8 }}
-          className='text-2xl font-victor text-yellow-600'
+          className='text-2xl font-victor text-yellow-500'
         >
           {item.years}
         </motion.h2>
@@ -48,102 +48,102 @@ export default function Home() {
 
   return (
     <>
-    <CustomCursor/>
-    <div className='flex flex-col w-screen bg-zinc-50'>
-      <div className='border border-slate-800 flex flex-row h-90vh'>
-        <div className='px-12 flex flex-col w-4/6 border-r border-slate-800'>
-          <div className='py-24'>
-            <h2 className='text-2xl font-light'>
-              Medical research is{' '}
-              <span className='font-normal text-yellow-600'>hard</span> to
-              interpret correctly and apply to real-life health situations. Yet,
-              practicing evidence-based health care requires knowing what the
-              evidence{' '}
-              <span className='font-normal text-yellow-600'>means</span> so you
-              can answer specific questions about health.
-            </h2>
-          </div>
-{/* fix stickythis is spilling into the next div bug */}
-          <motion.div
-            initial={{ opacity: 0, y: -100 }}
-            animate={{ opacity: 1, y: 1 }}
-            transition={{ duration: 0.3, delay: 0.4 }}
-            className='py-6 top-0 sticky z-40 bg-zinc-50 my-1'
-          >
-            <h1 className='font-victor text-6xl  text-yellow-600'>
-              Hilary Watts
-            </h1>
-            <h1 className='text-2xl  font-victor text-yellow-600'>
-              Medical Content Researcher
-            </h1>
-          </motion.div>
-          <div className='py-24'>
-            <h2 className='text-2xl font-light'>
-              I compile high-quality medical research and summarize it in
-              everyday language. I work for writers and individuals with a
-              vested interest in what the studies mean for life on the ground.
-            </h2>
-          </div>
-        </div>
-        <div className='w-2/6 bg-with-image  flex items-center justify-center'></div>
-      </div>
+      <CustomCursor />
+      <div className='flex flex-col w-screen bg-zinc-50'>
 
-      <div className='flex flex-col '>
-        <div className='flex flex-row border-b border-slate-800 px-12'>
-          <p className='text-2xl my-5 font-light'>Background</p>
-        </div>
-        <div className='flex flex-row border-b border-slate-800'>
-          <div className='px-12 w-1/2 '>
-            <p className='top-0 sticky font-light text-2xl my-5'>Education</p>
-          </div>
+        <div className='  flex items-center justify-center '>
 
-          <div className='flex flex-col w-1/2 border-l border-slate-800'>
-            <div className='border-b border-slate-800 p-7'>
-              <h1 className='text-2xl font-extralight '>BA Biology</h1>
+          <div className='px-12 my-32 w-4/6 flex flex-col border border-slate-800 bg-zinc-50'>
+            <div className='py-12'>
+              <h2 className='text-2xl font-light'>
+                Medical research is{' '}
+                <span className='font-normal text-yellow-500'>hard</span> to
+                interpret correctly and apply to real-life health situations.
+                Yet, practicing evidence-based health care requires knowing what
+                the evidence{' '}
+                <span className='font-normal text-yellow-500'>means</span> so
+                you can answer specific questions about health.
+              </h2>
             </div>
-            <div className='p-7'>
-              <h1 className='text-2xl font-extralight'>
-                MA Counseling Psychology
+            <motion.div
+              initial={{ opacity: 0, y: -100 }}
+              animate={{ opacity: 1, y: 1 }}
+              transition={{ duration: 0.3, delay: 0.4 }}
+              className='py-6 top-0 sticky z-40 bg-zinc-50 my-1'
+            >
+              <h1 className='font-victor text-6xl  text-yellow-500'>
+                Hilary Watts
               </h1>
+              <h1 className='text-2xl  font-victor text-yellow-500'>
+                Medical Content Researcher
+              </h1>
+            </motion.div>
+            <div className='py-24'>
+              <h2 className='text-2xl font-light'>
+                I compile high-quality medical research and summarize it in
+                everyday language. I work for writers and individuals with a
+                vested interest in what the studies mean for life on the ground.
+              </h2>
             </div>
           </div>
         </div>
-        <div className='flex flex-row border-b border-slate-800'>
-          <div className='px-12 w-1/2'>
-            <p className='top-0 sticky text-2xl my-5 font-light'>
-              Professional
-            </p>
-          </div>
 
-          <div className='flex flex-col  w-1/2 border-l border-slate-800'>
-            {titles.map((item) => (
-              <Title item={item} key={item.title} />
-            ))}
-            <motion.div className='progress' style={{ scaleX }} />
+        <div className='flex flex-col '>
+          <div className='flex flex-row border border-slate-800 px-12'>
+            <p className='text-2xl my-5 font-light'>Background</p>
+          </div>
+          <div className='flex flex-row border-b border-slate-800'>
+            <div className='px-12 w-1/2 '>
+              <p className='top-0 sticky font-light text-2xl my-5'>Education</p>
+            </div>
+
+            <div className='flex flex-col w-1/2 border-l border-slate-800'>
+              <div className='border-b border-slate-800 p-7'>
+                <h1 className='text-2xl font-extralight '>BA Biology</h1>
+              </div>
+              <div className='p-7'>
+                <h1 className='text-2xl font-extralight'>
+                  MA Counseling Psychology
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div className='flex flex-row border-b border-slate-800'>
+            <div className='px-12 w-1/2'>
+              <p className='top-0 sticky text-2xl my-5 font-light'>
+                Professional
+              </p>
+            </div>
+
+            <div className='flex flex-col  w-1/2 border-l border-slate-800'>
+              {titles.map((item) => (
+                <Title item={item} key={item.title} />
+              ))}
+              <motion.div className='progress' style={{ scaleX }} />
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className='flex h-screen flex-col justify-center items-center '>
-        <h2 className='text-3xl font-victor'>
-          Find out how I can help you put the best evidence into context.
-        </h2>
-        <motion.a
-          initial={{ opacity: 0, y: -100 }}
-          whileInView={{ opacity: 1, y: 1 }}
-          transition={{ duration: 0.3, delay: 0.8 }}
-          className='contact h-16 flex justify-center items-center border w-1/4 mt-16 relative p-6 border-solid border-r-4 border-b-4 border-slate-800 hover:border-yellow-600 '
-          href='#'
-        >
-          <p className='text-2xl font-light font-victor text-yellow-600'>
-            Contact Me
-          </p>
-        </motion.a>
+        <div className='flex h-screen flex-col justify-center items-center '>
+          <h2 className='text-3xl font-victor'>
+            Find out how I can help you put the best evidence into context.
+          </h2>
+          <motion.a
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 1 }}
+            transition={{ duration: 0.3, delay: 0.8 }}
+            className='contact h-16 flex justify-center items-center border w-1/4 mt-16 relative p-6 border-solid border-r-4 border-b-4 border-slate-800 hover:border-yellow-500 '
+            href='#'
+          >
+            <p className='text-2xl font-light font-victor text-yellow-500'>
+              Contact Me
+            </p>
+          </motion.a>
+        </div>
+        <div className='flex justify-self-end justify-center border-t border-slate-800 px-12'>
+          <p className='my-3'>website by osha foster</p>
+        </div>
       </div>
-      <div className='flex justify-self-end justify-center border-t border-slate-800 px-12'>
-        <p className='my-3'>website by osha foster</p>
-      </div>
-    </div>
     </>
   );
 }
