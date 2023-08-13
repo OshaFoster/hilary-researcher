@@ -27,7 +27,7 @@ function Title({ item }) {
           initial={{ opacity: 0, y: -80 }}
           whileInView={{ opacity: 1, y: 1 }}
           transition={{ duration: 0.3, delay: 0.8 }}
-          className='text-2xl font-victor text-yellow-600'
+          className='text-2xl font-victor highlight'
         >
           {item.years}
         </motion.h2>
@@ -55,11 +55,11 @@ export default function Home() {
           <div className='py-24'>
             <h2 className='text-2xl font-light'>
               Medical research is{' '}
-              <span className='font-normal text-yellow-600'>hard</span> to
+              <span className='font-normal highlight'>hard</span> to
               interpret correctly and apply to real-life health situations. Yet,
               practicing evidence-based health care requires knowing what the
               evidence{' '}
-              <span className='font-normal text-yellow-600'>means</span> so you
+              <span className='font-normal highlight'>means</span> so you
               can answer specific questions about health.
             </h2>
           </div>
@@ -70,10 +70,10 @@ export default function Home() {
             transition={{ duration: 0.3, delay: 0.4 }}
             className='py-6 top-0 sticky z-40 bg-zinc-50 my-1'
           >
-            <h1 className='font-victor text-6xl  text-yellow-600'>
+            <h1 className='font-victor text-6xl  highlight'>
               Hilary Watts
             </h1>
-            <h1 className='text-2xl  font-victor text-yellow-600'>
+            <h1 className='text-2xl  font-victor highlight'>
               Medical Content Researcher
             </h1>
           </motion.div>
@@ -135,7 +135,7 @@ export default function Home() {
           className='contact h-16 flex justify-center items-center border w-1/4 mt-16 relative p-6 border-solid border-r-4 border-b-4 border-slate-800 hover:border-yellow-600 '
           href='#'
         >
-          <p className='text-2xl font-light font-victor text-yellow-600'>
+          <p className='text-2xl font-light font-victor highlight'>
             Contact Me
           </p>
         </motion.a>
