@@ -49,11 +49,10 @@ export default function Home() {
   return (
     <>
       <CustomCursor />
+
       <div className='flex flex-col w-screen bg-zinc-50'>
-
         <div className='  flex items-center justify-center '>
-
-          <div className='px-12 my-32 w-4/6 flex flex-col border border-slate-800 bg-zinc-50'>
+          <div className='px-12 my-32 w-4/6 flex flex-col border border-slate-800'>
             <div className='py-12'>
               <h2 className='text-2xl font-light'>
                 Medical research is{' '}
@@ -90,11 +89,11 @@ export default function Home() {
 
         <div className='flex flex-col '>
           <div className='flex flex-row border border-slate-800 px-12'>
-            <p className='text-2xl my-5 font-light'>Background</p>
+            <p className='text-2xl my-5'>Background</p>
           </div>
           <div className='flex flex-row border-b border-slate-800'>
             <div className='px-12 w-1/2 '>
-              <p className='top-0 sticky font-light text-2xl my-5'>Education</p>
+              <p className='top-0 sticky text-2xl my-5'>Education</p>
             </div>
 
             <div className='flex flex-col w-1/2 border-l border-slate-800'>
@@ -110,9 +109,7 @@ export default function Home() {
           </div>
           <div className='flex flex-row border-b border-slate-800'>
             <div className='px-12 w-1/2'>
-              <p className='top-0 sticky text-2xl my-5 font-light'>
-                Professional
-              </p>
+              <p className='top-0 sticky text-2xl my-5'>Professional</p>
             </div>
 
             <div className='flex flex-col  w-1/2 border-l border-slate-800'>
