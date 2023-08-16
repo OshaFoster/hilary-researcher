@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@300;600&display=swap');
 
 .bg-with-image {
-  background-image: url('../public/birdimage.png');
+  background-image: url('../public/img18.jpg');
   background-size: cover;
 }
 
@@ -24,7 +24,7 @@
 } */
 
 .highlight {
-  color: #a8755b
+  color:#14356b;
 }
 
 body {
