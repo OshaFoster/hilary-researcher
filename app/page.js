@@ -51,8 +51,8 @@ export default function Home() {
       <CustomCursor />
 
       <div className='flex flex-col w-screen bg-zinc-50'>
-        <div className='  flex items-center justify-center '>
-          <div className='px-12 my-32 w-4/6 flex flex-col border border-slate-800'>
+        <div className='  flex items-center bg-with-image justify-center '>
+          <div className='px-12 my-32 w-4/6 flex flex-col border bg-zinc-50 border-slate-800'>
             <div className='py-12'>
               <h2 className='text-2xl font-light'>
                 Medical research is{' '}
