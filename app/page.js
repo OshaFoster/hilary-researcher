@@ -5,13 +5,13 @@ import CustomCursor from './components/customCursor';
 const titles = [
   {
     title: 'Medical content researcher and reviewer for The Ruscio Institute',
-    years: '03yrs',
+    years: '3yrs',
   },
   { title: 'Biologist', years: '10yrs' },
   { title: 'Editor and writer', years: '11yrs' },
-  { title: 'Journalist', years: '02yrs' },
-  { title: 'Student of medicine', years: '02yrs' },
-  { title: 'Marriage & Family Therapist trainee', years: '01yr' },
+  { title: 'Journalist', years: '2yrs' },
+  { title: 'Student of medicine', years: '2yrs' },
+  { title: 'Marriage & Family Therapist trainee', years: '1yr' },
 ];
 
 function Title({ item }) {
@@ -51,41 +51,42 @@ export default function Home() {
       <CustomCursor />
 
       <div className='flex flex-col w-screen bg-zinc-50'>
-        <div className='  flex items-center bg-with-image justify-center '>
-          <div className='px-12 my-32 w-4/6 flex flex-col border bg-zinc-50 border-slate-800'>
-            <div className='py-12'>
-              <h2 className='text-2xl font-light'>
-                Medical research is{' '}
-                <span className='font-normal text-yellow-500'>hard</span> to
-                interpret correctly and apply to real-life health situations.
-                Yet, practicing evidence-based health care requires knowing what
-                the evidence{' '}
-                <span className='font-normal text-yellow-500'>means</span> so
-                you can answer specific questions about health.
-              </h2>
-            </div>
-            <motion.div
-              initial={{ opacity: 0, y: -100 }}
-              animate={{ opacity: 1, y: 1 }}
-              transition={{ duration: 0.3, delay: 0.4 }}
-              className='py-6 top-0 sticky z-40 bg-zinc-50 my-1'
-            >
-              <h1 className='font-victor text-6xl  text-yellow-500'>
-                Hilary Watts
-              </h1>
-              <h1 className='text-2xl  font-victor text-yellow-500'>
-                Medical Content Researcher
-              </h1>
-            </motion.div>
-            <div className='py-24'>
-              <h2 className='text-2xl font-light'>
-                I compile high-quality medical research and summarize it in
-                everyday language. I work for writers and individuals with a
-                vested interest in what the studies mean for life on the ground.
-              </h2>
-            </div>
+      <div className='border border-slate-800 flex flex-row h-90vh'>
+        <div className='px-12 flex flex-col w-4/6 border-r border-slate-800'>
+          <div className='py-24'>
+            <h2 className='text-2xl font-light'>
+              Medical research is{' '}
+              <span className='font-normal highlight'>hard</span> to
+              interpret correctly and apply to real-life health situations. Yet,
+              practicing evidence-based health care requires knowing what the
+              evidence{' '}
+              <span className='font-normal highlight'>means</span> so you
+              can answer specific questions about health.
+            </h2>
+          </div>
+          <motion.div
+            initial={{ opacity: 0, y: -100 }}
+            animate={{ opacity: 1, y: 1 }}
+            transition={{ duration: 0.3, delay: 0.4 }}
+            className='py-6 top-0 sticky z-40 bg-zinc-50 my-1'
+          >
+            <h1 className='font-victor text-6xl  highlight'>
+              Hilary Watts
+            </h1>
+            <h1 className='text-2xl  font-victor highlight'>
+              Medical Content Researcher
+            </h1>
+          </motion.div>
+          <div className='py-24'>
+            <h2 className='text-2xl font-light'>
+              I compile high-quality medical research and summarize it in
+              everyday language. I work for writers and individuals with a
+              vested interest in what the studies mean for life on the ground.
+            </h2>
           </div>
         </div>
+        <div className='w-2/6 bg-with-image  flex items-center justify-center'></div>
+      </div>
 
         <div className='flex flex-col '>
           <div className='flex flex-row border border-slate-800 px-12'>
