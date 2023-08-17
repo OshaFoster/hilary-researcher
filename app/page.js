@@ -56,11 +56,11 @@ export default function Home() {
           <div className='py-24'>
             <h2 className='text-2xl font-light'>
               Medical research is{' '}
-              <span className='font-normal highlight'>hard</span> to
+              <span className='font-normal text-yellow-500'>hard</span> to
               interpret correctly and apply to real-life health situations. Yet,
               practicing evidence-based health care requires knowing what the
               evidence{' '}
-              <span className='font-normal highlight'>means</span> so you
+              <span className='font-normal text-yellow-500'>means</span> so you
               can answer specific questions about health.
             </h2>
           </div>
@@ -70,10 +70,10 @@ export default function Home() {
             transition={{ duration: 0.3, delay: 0.4 }}
             className='py-6 top-0 sticky z-40 bg-zinc-50 my-1'
           >
-            <h1 className='font-victor text-6xl  highlight'>
+            <h1 className='font-victor text-6xl  text-yellow-500'>
               Hilary Watts
             </h1>
-            <h1 className='text-2xl  font-victor highlight'>
+            <h1 className='text-2xl  font-victor text-yellow-500'>
               Medical Content Researcher
             </h1>
           </motion.div>
