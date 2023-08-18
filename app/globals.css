@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@300;600&display=swap');
 
 .bg-with-image {
-  background-image: url('../public/img2.jpg');
+  background-image: url('../public/img1.jpg');
   background-size: cover;
 }
 
@@ -14,54 +14,50 @@
 }
 
 .highlight1 {
-  color: '#1f1f31' !important;
+  color: #161661 !important;
 }
-
 .highlight2 {
-  color: '#2a3414' !important;
+  color: #475f11 !important;
 }
-
 .highlight3 {
-  color: '#154c79' !important;
+  color: #154c79 !important;
 }
-
 .highlight4 {
-  color: '#223364'
+  color: #223364;
 }
-
 .highlight5 {
-  color: '#30D5C8' !important;
+  color: #0f9593 !important;
 }
-
+/* .highlight5 {
+  color: #56b0b0 !important;
+} */
+/* .highlight5 {
+  color: #136046 !important;
+} */
 .highlight6 {
-  color: '#FF00FF' !important;
+  color: magenta !important;
 }
-
 .highlight7 {
-  color: '#F15A60' !important;
+  color: #f15a96 !important;
 }
-
 .highlight8 {
-  color: '#E94B8F' !important;
+  color: #c70630 !important;
 }
-
 .highlight9 {
-  color: 'rgb(51 65 85)' !important;
+  color: rgb(51 65 85) !important;
 }
 
 .highlight10 {
-  color: 'rgb(30 41 59)' !important;
+  color: rgb(30 41 59) !important;
 }
 
 .highlight11 {
-  color: 'rgb(2 6 23)' !important;
+  color: rgb(2 6 23) !important;
 }
-
 
 /* bg-slate-700	background-color: rgb(51 65 85); */
 /* bg-slate-800	background-color: rgb(30 41 59); */
 /* bg-slate-950	background-color: rgb(2 6 23); */
-
 
 /* Leaf: really dark green or navy blue or black or turquoise or magenta
 Sun: I like the dark blue, try magenta or orangey-magenta?
@@ -69,18 +65,16 @@ Trees: dark grey or black or dark blue or turquoise
 Blue spirals: turquoise!
 Blue blobs: the blue you have is good */
 
-
-
 body {
   background-color: #f0efed;
 }
 
 .contact:hover p {
-  display: none
+  display: none;
 }
 
 .contact:hover:before {
-  content: "reasearcher@hilarywatts.com";
+  content: 'reasearcher@hilarywatts.com';
   font-size: 20px;
 }
 
