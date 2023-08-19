@@ -120,7 +120,7 @@ export default function Home() {
               </h2>
             </div>
           </div>
-          <div className='w-2/3 md:w-2/6 bg-with-image flex items-center justify-center'></div>
+          <div className='w-2/3 md:w-2/6 bg-with-image bg-center flex items-center justify-center'></div>
         </div>
 
         <div className='flex flex-col'>
