@@ -78,7 +78,7 @@ export default function Home() {
       <div className='flex flex-col w-screen bg-zinc-50'>
         <div className='border-r flex flex-row h-90vh'>
           <div className='px-6 sm:px-12 flex flex-col w-5/6 md:w-4/6 border-r border-slate-800'>
-            <div className='py-12 sm:py-24'>
+            <div className='py-8 sm:py-24'>
               <h2 className='text-2xl font-light'>
                 Medical research is{' '}
                 <span className='font-normal text-lime-700'>
@@ -103,7 +103,7 @@ export default function Home() {
               initial={{ opacity: 0, y: -100 }}
               animate={{ opacity: 1, y: 1 }}
               transition={{ duration: 0.3, delay: 0.4 }}
-              className='py-4 md:py-6 top-0 sticky z-40 bg-zinc-50 my-1'
+              className='py-2 md:py-6 top-0 sticky z-40 bg-zinc-50 my-1'
             >
               <h1 className='font-victor text-6xl  text-lime-700'>
                 Hilary Watts
@@ -112,7 +112,7 @@ export default function Home() {
                 Medical Content Researcher
               </h1>
             </motion.div>
-            <div className='py-12 sm:py-24'>
+            <div className='py-8 sm:py-24'>
               <h2 className='text-2xl font-light'>
                 I compile high-quality medical research and summarize it in
                 everyday language. I work for writers and individuals with a
