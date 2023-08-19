@@ -172,7 +172,7 @@ export default function Home() {
           <EmailLink />
         </div>
         <div className='flex justify-self-end justify-center border-t border-slate-800 px-12'>
-          <p className='my-3'>website by osha foster</p>
+          <p className='my-6 sm:my-3'>website by osha foster</p>
         </div>
       </div>
     </>
