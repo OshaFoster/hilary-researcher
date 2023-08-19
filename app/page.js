@@ -76,7 +76,7 @@ export default function Home() {
       <CustomCursor />
 
       <div className='flex flex-col w-screen bg-zinc-50'>
-        <div className='border-r flex flex-row h-90vh'>
+        <div className='border-r border-b border-slate-800 flex flex-row h-90vh'>
           <div className='px-6 sm:px-12 flex flex-col w-5/6 md:w-4/6 border-r border-slate-800'>
             <div className='py-8 sm:py-24'>
               <h2 className='text-2xl font-light'>
@@ -120,15 +120,11 @@ export default function Home() {
               </h2>
             </div>
           </div>
-          <div className='w-1/6 md:w-2/6 bg-with-image  flex items-center justify-center'></div>
+          <div className='w-2/3 md:w-2/6 bg-with-image flex items-center justify-center'></div>
         </div>
 
         <div className='flex flex-col'>
-          <div className='flex flex-row border-y border-zinc-50 sm:border-slate-800 px-6 sm:px-12 font-semibold sm:font-normal  bg-lime-700 sm:bg-zinc-50'>
-            <p className='text-2xl my-5 text-zinc-50 sm:text-slate-800'>
-              Background
-            </p>
-          </div>
+
 
           <div className='flex flex-col  md:flex-row border-b border-slate-800'>
             <div className='px-6 sm:px-12 w-full md:w-1/2 bg-lime-700 sm:bg-zinc-50'>
