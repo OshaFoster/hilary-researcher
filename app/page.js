@@ -21,7 +21,7 @@ function Title({ item }) {
 
   return (
     <section className='flex flex-row border-b border-slate-800'>
-      <div className='flex flex-wrap flex-row max-w-md  md:max-w-2xl pl-12 p-7'>
+      <div className='flex flex-wrap flex-row max-w-md  md:max-w-2xl pl-6 sm:pl-12 p-7'>
         <h1 className='text-2xl font-extralight'>{item.title}</h1>
       </div>
       <div className='flex flex-row pt-7' ref={ref}>
@@ -56,7 +56,7 @@ export default function Home() {
         initial={{ opacity: 0, y: -100 }}
         whileInView={{ opacity: 1, y: 1 }}
         transition={{ duration: 0.3, delay: 0.8 }}
-        className='contact bg-lime-700 sm:bg-zinc-50 h-16 flex justify-center items-center border w-96 mt-16 relative p-6 border-solid border-r-4 border-b-4 border-slate-800 hover:border-slate-800 sm:hover:border-emerald-800'
+        className='contact bg-lime-700 sm:bg-zinc-50 h-16 flex justify-center items-center border w-80 sm:w-96 mt-16 relative p-6 border-solid border-r-4 border-b-4 border-slate-800 hover:border-slate-800 sm:hover:border-emerald-800'
         href={mailtoLink}
       >
         <p className='text-2xl font-medium font-victor text-zinc-50 sm:text-lime-700'>
@@ -77,7 +77,7 @@ export default function Home() {
 
       <div className='flex flex-col w-screen bg-zinc-50'>
         <div className='border-r flex flex-row h-90vh'>
-          <div className='px-12 flex flex-col w-5/6 md:w-4/6 border-r border-slate-800'>
+          <div className='px-6 sm:px-12 flex flex-col w-5/6 md:w-4/6 border-r border-slate-800'>
             <div className='py-12 sm:py-24'>
               <h2 className='text-2xl font-light'>
                 Medical research is{' '}
@@ -124,24 +124,24 @@ export default function Home() {
         </div>
 
         <div className='flex flex-col'>
-          <div className='flex flex-row border-y border-zinc-50 sm:border-slate-800 px-12 font-semibold sm:font-normal  bg-lime-700 sm:bg-zinc-50'>
+          <div className='flex flex-row border-y border-zinc-50 sm:border-slate-800 px-6 sm:px-12 font-semibold sm:font-normal  bg-lime-700 sm:bg-zinc-50'>
             <p className='text-2xl my-5 text-zinc-50 sm:text-slate-800'>
               Background
             </p>
           </div>
 
           <div className='flex flex-col  md:flex-row border-b border-slate-800'>
-            <div className='px-12 w-full md:w-1/2 bg-lime-700 sm:bg-zinc-50'>
+            <div className='px-6 sm:px-12 w-full md:w-1/2 bg-lime-700 sm:bg-zinc-50'>
               <p className='top-5 sticky text-2xl my-5  text-zinc-50 sm:text-slate-800'>
                 Education
               </p>
             </div>
 
             <div className='flex flex-col w-full md:w-1/2 border-l border-slate-800'>
-              <div className='border-b border-slate-800 p-7 pl-12'>
+              <div className='border-b border-slate-800 p-7 pl-6 sm:pl-12'>
                 <h1 className='text-2xl font-extralight '>BA Biology</h1>
               </div>
-              <div className='p-7 pl-12'>
+              <div className='p-7 pl-6 sm:pl-12'>
                 <h1 className='text-2xl font-extralight'>
                   MA Counseling Psychology
                 </h1>
@@ -150,7 +150,7 @@ export default function Home() {
           </div>
 
           <div className='flex flex-col  md:flex-row '>
-            <div className='px-12 w-full md:w-1/2 border-b border-slate-800 bg-lime-700 sm:bg-zinc-50'>
+            <div className='pl-6 sm:pl-12 w-full md:w-1/2 border-b border-slate-800 bg-lime-700 sm:bg-zinc-50'>
               <p className='top-5 sticky text-2xl my-5 text-turquise text-zinc-50 sm:text-slate-800'>
                 Professional
               </p>

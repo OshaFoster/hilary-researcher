@@ -76,5 +76,8 @@ body {
   background-color: #4d7c0f;
   transform: translate(-50%, -50%);
   pointer-events: none; /* Ensure the cursor doesn't interfere with mouse interactions */
-  z-index: 9999; /* Bring the cursor above other elements */
+  z-index: 9999;
+  @media (max-width: 640px) {
+    display: none;
+  } /* Bring the cursor above other elements */
 }
