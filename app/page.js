@@ -56,10 +56,12 @@ export default function Home() {
         initial={{ opacity: 0, y: -100 }}
         whileInView={{ opacity: 1, y: 1 }}
         transition={{ duration: 0.3, delay: 0.8 }}
-        className='contact h-16 flex justify-center items-center border w-4/6 sm:w-2/4 md:w-1/4 mt-16 relative p-6 border-solid border-r-4 border-b-4 border-slate-800 hover:border-emerald-800 '
+        className='contact bg-lime-700 sm:bg-zinc-50 h-16 flex justify-center items-center border w-96 mt-16 relative p-6 border-solid border-r-4 border-b-4 border-slate-800 hover:border-slate-800 sm:hover:border-emerald-800'
         href={mailtoLink}
       >
-        <p className='text-2xl font-medium font-victor text-lime-700'>Contact Me</p>
+        <p className='text-2xl font-medium font-victor text-zinc-50 sm:text-lime-700'>
+          Contact Me
+        </p>
       </motion.a>
     );
   };
@@ -121,9 +123,11 @@ export default function Home() {
           <div className='w-1/6 md:w-2/6 bg-with-image  flex items-center justify-center'></div>
         </div>
 
-        <div className='flex flex-col '>
-          <div className='flex flex-row border-y border-slate-800 px-12'>
-            <p className='text-2xl my-5'>Background</p>
+        <div className='flex flex-col'>
+          <div className='flex flex-row border-y border-zinc-50 sm:border-slate-800 px-12 font-semibold sm:font-normal  bg-lime-700 sm:bg-zinc-50'>
+            <p className='text-2xl my-5 text-zinc-50 sm:text-slate-800'>
+              Background
+            </p>
           </div>
 
           <div className='flex flex-col  md:flex-row border-b border-slate-800'>
