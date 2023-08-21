@@ -125,7 +125,7 @@ export default function Home() {
         <div className='flex flex-col'>
           <div className='flex flex-col  md:flex-row border-b border-slate-800'>
             <div className='px-6 sm:px-12 w-full md:w-1/2 bg-pink-700 sm:bg-zinc-50'>
-              <p className='top-5 sticky text-xl sm:text-2xl my-5  text-zinc-50 sm:text-slate-800'>
+              <p className='top-5 sticky text-2xl my-5  text-zinc-50 sm:text-slate-800'>
                 Education
               </p>
             </div>
@@ -161,7 +161,7 @@ export default function Home() {
 
           <div className='flex flex-col  md:flex-row '>
             <div className='pl-6 sm:pl-12 w-full md:w-1/2 border-b border-slate-800 bg-pink-700 sm:bg-zinc-50'>
-              <p className='top-5 sticky text-xl sm:text-2xl my-5 text-turquise text-zinc-50 sm:text-slate-800'>
+              <p className='top-5 sticky text-2xl my-5 text-turquise text-zinc-50 sm:text-slate-800'>
                 Professional
               </p>
             </div>
