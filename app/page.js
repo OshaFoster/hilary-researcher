@@ -105,7 +105,7 @@ export default function Home() {
               transition={{ duration: 0.3, delay: 0.4 }}
               className=' md:py-6 top-0 sticky z-40 bg-zinc-50 my-1'
             >
-              <h1 className='font-victor text-6xl  text-blue-800'>
+              <h1 className='font-victor text-5xl  text-blue-800'>
                 Hilary Watts
               </h1>
               <h1 className='text-xl  font-victor text-blue-800'>
