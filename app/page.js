@@ -29,7 +29,7 @@ function Title({ item }) {
           initial={{ opacity: 0, y: -80 }}
           whileInView={{ opacity: 1, y: 1 }}
           transition={{ duration: 0.3, delay: 0.8 }}
-          className='text-2xl font-victor font-medium text-pink-800 mr-10'
+          className='text-2xl font-victor font-medium text-pink-700 mr-10'
         >
           {item.years}
         </motion.h2>
@@ -59,7 +59,7 @@ export default function Home() {
         className='contact bg-zinc-50 h-16 flex justify-center items-center border w-80 sm:w-96 mt-16 relative p-6 border-solid border-r-4 border-b-4 border-slate-700 hover:border-slate-800 sm:hover:border-emerald-800'
         href={mailtoLink}
       >
-        <p className='text-2xl font-medium font-victor text-pink-800'>
+        <p className='text-2xl font-medium font-victor text-pink-700'>
           Contact Me
         </p>
       </motion.a>
@@ -78,22 +78,22 @@ export default function Home() {
       <div className='flex flex-col w-screen bg-zinc-50'>
         <div className='border-r border-b border-slate-800 flex flex-row h-90vh'>
           <div className='px-6 sm:px-12 flex flex-col w-5/6 md:w-4/6 border-r border-slate-800'>
-            <div className='py-8 sm:py-24'>
+            <div className='py-6 sm:py-24'>
               <h2 className='text-2xl font-light'>
                 Medical research is{' '}
-                <span className='font-normal text-pink-800'>
+                <span className='font-normal text-pink-700'>
                   hard to interpret
                 </span>{' '}
                 correctly and apply to{' '}
-                <span className='font-normal text-pink-800'>
+                <span className='font-normal text-pink-700'>
                   real-life health
                 </span>{' '}
                 situations. Yet, practicing{' '}
-                <span className='font-normal text-pink-800'>
+                <span className='font-normal text-pink-700'>
                   evidence-based health care
                 </span>{' '}
                 requires knowing{' '}
-                <span className='font-normal text-pink-800'>
+                <span className='font-normal text-pink-700'>
                   what the evidence means
                 </span>{' '}
                 so you can answer specific questions about health.
@@ -103,16 +103,16 @@ export default function Home() {
               initial={{ opacity: 0, y: -100 }}
               animate={{ opacity: 1, y: 1 }}
               transition={{ duration: 0.3, delay: 0.4 }}
-              className='py-2 md:py-6 top-0 sticky z-40 bg-zinc-50 my-1'
+              className=' md:py-6 top-0 sticky z-40 bg-zinc-50 my-1'
             >
-              <h1 className='font-victor text-6xl  text-lime-700'>
+              <h1 className='font-victor text-6xl  text-blue-800'>
                 Hilary Watts
               </h1>
-              <h1 className='text-2xl  font-victor text-lime-700'>
+              <h1 className='text-2xl  font-victor text-blue-800'>
                 Medical Content Researcher
               </h1>
             </motion.div>
-            <div className='py-8 sm:py-24'>
+            <div className='py-6 sm:py-24'>
               <h2 className='text-2xl font-light'>
                 I compile high-quality medical research and summarize it in
                 everyday language. I work for writers and individuals with a
@@ -127,7 +127,7 @@ export default function Home() {
 
 
           <div className='flex flex-col  md:flex-row border-b border-slate-800'>
-            <div className='px-6 sm:px-12 w-full md:w-1/2 bg-pink-800 sm:bg-zinc-50'>
+            <div className='px-6 sm:px-12 w-full md:w-1/2 bg-pink-700 sm:bg-zinc-50'>
               <p className='top-5 sticky text-2xl my-5  text-zinc-50 sm:text-slate-800'>
                 Education
               </p>
@@ -146,7 +146,7 @@ export default function Home() {
           </div>
 
           <div className='flex flex-col  md:flex-row '>
-            <div className='pl-6 sm:pl-12 w-full md:w-1/2 border-b border-slate-800 bg-pink-800 sm:bg-zinc-50'>
+            <div className='pl-6 sm:pl-12 w-full md:w-1/2 border-b border-slate-800 bg-pink-700 sm:bg-zinc-50'>
               <p className='top-5 sticky text-2xl my-5 text-turquise text-zinc-50 sm:text-slate-800'>
                 Professional
               </p>
@@ -162,7 +162,7 @@ export default function Home() {
         </div>
 
         <div className='flex h-screen flex-col justify-center items-center '>
-          <h2 className='text-3xl font-victor mx-12 text-center text-lime-700'>
+          <h2 className='text-3xl font-victor mx-12 text-center text-blue-800'>
             Find out how I can help you put the best evidence into context.
           </h2>
           <EmailLink />
