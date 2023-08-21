@@ -105,10 +105,10 @@ export default function Home() {
               transition={{ duration: 0.3, delay: 0.4 }}
               className=' md:py-6 top-0 sticky z-40 bg-zinc-50 my-1'
             >
-              <h1 className='font-victor text-5xl  text-blue-800'>
+              <h1 className='font-victor text-5xl  text-lime-700'>
                 Hilary Watts
               </h1>
-              <h1 className='text-xl  font-victor text-blue-800'>
+              <h1 className='text-xl  font-victor text-lime-700'>
                 Medical Content Researcher
               </h1>
             </motion.div>
@@ -127,7 +127,7 @@ export default function Home() {
 
 
           <div className='flex flex-col  md:flex-row border-b border-slate-800'>
-            <div className='px-6 sm:px-12 w-full md:w-1/2 bg-pink-700 sm:bg-zinc-50'>
+            <div className='px-6 sm:px-12 w-full md:w-1/2 bg-pink-800 sm:bg-zinc-50'>
               <p className='top-5 sticky text-xl my-5  text-zinc-50 sm:text-slate-800'>
                 Education
               </p>
@@ -146,7 +146,7 @@ export default function Home() {
           </div>
 
           <div className='flex flex-col  md:flex-row '>
-            <div className='pl-6 sm:pl-12 w-full md:w-1/2 border-b border-slate-800 bg-pink-700 sm:bg-zinc-50'>
+            <div className='pl-6 sm:pl-12 w-full md:w-1/2 border-b border-slate-800 bg-pink-800 sm:bg-zinc-50'>
               <p className='top-5 sticky text-xl my-5 text-turquise text-zinc-50 sm:text-slate-800'>
                 Professional
               </p>
@@ -162,7 +162,7 @@ export default function Home() {
         </div>
 
         <div className='flex h-screen flex-col justify-center items-center '>
-          <h2 className='text-3xl font-victor mx-12 text-center text-blue-800'>
+          <h2 className='text-3xl font-victor mx-12 text-center text-lime-700'>
             Find out how I can help you put the best evidence into context.
           </h2>
           <EmailLink />
