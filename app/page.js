@@ -58,7 +58,7 @@ export default function Home() {
         className='contact bg-zinc-50 h-16 flex justify-center items-center border w-80 sm:w-96 mt-16 relative p-6 border-solid border-r-4 border-b-4 border-slate-700 hover:border-slate-800 sm:hover:border-emerald-800'
         href={mailtoLink}
       >
-        <p className='text-xl sm:text-2xl font-medium font-victor text-pink-700'>
+        <p className='text-2xl font-medium font-victor text-pink-700'>
           Contact Me
         </p>
       </motion.a>
