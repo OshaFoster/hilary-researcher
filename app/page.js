@@ -107,7 +107,7 @@ export default function Home() {
               <h1 className='font-victor text-6xl sm:text-6xl text-lime-700'>
                 Hilary Watts
               </h1>
-              <h1 className='text-xl sm:text-2xl  font-victor text-lime-700'>
+              <h1 className='text-2xl sm:text-2xl  font-victor text-lime-700'>
                 Medical Content Researcher
               </h1>
             </motion.div>
