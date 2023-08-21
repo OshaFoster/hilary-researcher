@@ -28,7 +28,7 @@ function Title({ item }) {
           initial={{ opacity: 0, y: -80 }}
           whileInView={{ opacity: 1, y: 1 }}
           transition={{ duration: 0.3, delay: 0.8 }}
-          className='text-xl sm:text-2xl font-victor font-medium text-pink-700 mr-10'
+          className='text-xl sm:text-2xl font-victor whitespace-nowrap  font-medium text-pink-700 mr-10'
         >
           {item.years}
         </motion.h2>
