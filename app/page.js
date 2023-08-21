@@ -29,7 +29,7 @@ function Title({ item }) {
           initial={{ opacity: 0, y: -80 }}
           whileInView={{ opacity: 1, y: 1 }}
           transition={{ duration: 0.3, delay: 0.8 }}
-          className='text-2xl font-victor font-medium text-lime-700 mr-10'
+          className='text-2xl font-victor font-medium text-pink-800 mr-10'
         >
           {item.years}
         </motion.h2>
@@ -56,10 +56,10 @@ export default function Home() {
         initial={{ opacity: 0, y: -100 }}
         whileInView={{ opacity: 1, y: 1 }}
         transition={{ duration: 0.3, delay: 0.8 }}
-        className='contact bg-lime-700 sm:bg-zinc-50 h-16 flex justify-center items-center border w-80 sm:w-96 mt-16 relative p-6 border-solid border-r-4 border-b-4 border-slate-800 hover:border-slate-800 sm:hover:border-emerald-800'
+        className='contact bg-zinc-50 h-16 flex justify-center items-center border w-80 sm:w-96 mt-16 relative p-6 border-solid border-r-4 border-b-4 border-slate-700 hover:border-slate-800 sm:hover:border-emerald-800'
         href={mailtoLink}
       >
-        <p className='text-2xl font-medium font-victor text-zinc-50 sm:text-lime-700'>
+        <p className='text-2xl font-medium font-victor text-pink-800'>
           Contact Me
         </p>
       </motion.a>
@@ -81,19 +81,19 @@ export default function Home() {
             <div className='py-8 sm:py-24'>
               <h2 className='text-2xl font-light'>
                 Medical research is{' '}
-                <span className='font-normal text-lime-700'>
+                <span className='font-normal text-pink-800'>
                   hard to interpret
                 </span>{' '}
                 correctly and apply to{' '}
-                <span className='font-normal text-lime-700'>
+                <span className='font-normal text-pink-800'>
                   real-life health
                 </span>{' '}
                 situations. Yet, practicing{' '}
-                <span className='font-normal text-lime-700'>
+                <span className='font-normal text-pink-800'>
                   evidence-based health care
                 </span>{' '}
                 requires knowing{' '}
-                <span className='font-normal text-lime-700'>
+                <span className='font-normal text-pink-800'>
                   what the evidence means
                 </span>{' '}
                 so you can answer specific questions about health.
@@ -127,7 +127,7 @@ export default function Home() {
 
 
           <div className='flex flex-col  md:flex-row border-b border-slate-800'>
-            <div className='px-6 sm:px-12 w-full md:w-1/2 bg-lime-700 sm:bg-zinc-50'>
+            <div className='px-6 sm:px-12 w-full md:w-1/2 bg-pink-800 sm:bg-zinc-50'>
               <p className='top-5 sticky text-2xl my-5  text-zinc-50 sm:text-slate-800'>
                 Education
               </p>
@@ -146,7 +146,7 @@ export default function Home() {
           </div>
 
           <div className='flex flex-col  md:flex-row '>
-            <div className='pl-6 sm:pl-12 w-full md:w-1/2 border-b border-slate-800 bg-lime-700 sm:bg-zinc-50'>
+            <div className='pl-6 sm:pl-12 w-full md:w-1/2 border-b border-slate-800 bg-pink-800 sm:bg-zinc-50'>
               <p className='top-5 sticky text-2xl my-5 text-turquise text-zinc-50 sm:text-slate-800'>
                 Professional
               </p>
@@ -162,7 +162,7 @@ export default function Home() {
         </div>
 
         <div className='flex h-screen flex-col justify-center items-center '>
-          <h2 className='text-3xl font-victor mx-12 text-center'>
+          <h2 className='text-3xl font-victor mx-12 text-center text-lime-700'>
             Find out how I can help you put the best evidence into context.
           </h2>
           <EmailLink />
