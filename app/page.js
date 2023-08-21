@@ -105,10 +105,10 @@ export default function Home() {
               transition={{ duration: 0.3, delay: 0.4 }}
               className=' md:py-6 top-0 sticky z-40 bg-zinc-50 my-1'
             >
-              <h1 className='font-victor text-5xl sm:text-6xl text-cyan-800'>
+              <h1 className='font-victor text-5xl sm:text-6xl text-sky-800'>
                 Hilary Watts
               </h1>
-              <h1 className='text-xl sm:text-2xl  font-victor text-cyan-800'>
+              <h1 className='text-xl sm:text-2xl  font-victor text-sky-800'>
                 Medical Content Researcher
               </h1>
             </motion.div>
@@ -162,7 +162,7 @@ export default function Home() {
         </div>
 
         <div className='flex h-screen flex-col justify-center items-center '>
-          <h2 className='text-3xl font-victor mx-12 text-center text-cyan-800'>
+          <h2 className='text-3xl font-victor mx-12 text-center text-slate-500'>
             Find out how I can help you put the best evidence into context.
           </h2>
           <EmailLink />
