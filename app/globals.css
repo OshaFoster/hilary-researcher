@@ -4,6 +4,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@300;600&display=swap');
 
+@font-face {
+  font-family: 'Victor Mono';
+  src: url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@300;600&display=swap');
+}
+
+
 .bg-with-image {
   background-image: url('../public/img1.jpg');
   background-size: cover;
@@ -11,48 +17,6 @@
 
 .background {
   background-color: #f0efed;
-}
-
-.highlight1 {
-  color: #161661 !important;
-}
-.highlight2 {
-  color: #475f11 !important;
-}
-.highlight3 {
-  color: #154c79 !important;
-}
-.highlight4 {
-  color: #223364;
-}
-.highlight5 {
-  color: #0f9593 !important;
-}
-/* .highlight5 {
-  color: #56b0b0 !important;
-} */
-/* .highlight5 {
-  color: #136046 !important;
-} */
-.highlight6 {
-  color: magenta !important;
-}
-.highlight7 {
-  color: #f15a96 !important;
-}
-.highlight8 {
-  color: #c70630 !important;
-}
-.highlight9 {
-  color: rgb(51 65 85) !important;
-}
-
-.highlight10 {
-  color: rgb(30 41 59) !important;
-}
-
-.highlight11 {
-  color: rgb(2 6 23) !important;
 }
 
 body {
