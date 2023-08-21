@@ -20,7 +20,7 @@ function Title({ item }) {
 
   return (
     <section className='flex flex-row border-b border-slate-800'>
-      <div className='flex flex-wrap flex-row max-w-md  md:max-w-xl pl-6 sm:pl-12 p-7'>
+      <div className='flex flex-wrap flex-row max-w-sm  md:max-w-xl pl-6 sm:pl-12 p-7'>
         <h1 className='text-xl sm:text-2xl font-extralight'>{item.title}</h1>
       </div>
       <div className='flex flex-row pt-7' ref={ref}>
