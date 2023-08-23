@@ -2,16 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@300;600&display=swap');
-
 @font-face {
-  font-family: 'Victor Mono';
-  src: url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@300;600&display=swap');
+  font-family: 'Antic Slab';
+  src: url('public/fonts/AnticSlab-Regular.ttf') format('truetype'); /* TTF font format */
+  font-weight: normal; /* Specify the default font weight */
+  font-style: normal;
 }
 
-
 .bg-with-image {
-  background-image: url('../public/img1.jpg');
+  background-image: url('public/img1.jpg');
   background-size: cover;
 }
 
