@@ -77,7 +77,7 @@ export default function Home() {
       <main className='flex flex-col w-screen bg-zinc-50'>
         <div
           id='main-content'
-          className='border-r border-b border-slate-800 flex flex-row h-90vh'
+          className='border-r sm:border-b border-slate-800 flex flex-row h-90vh'
         >
           <div className='px-6 sm:px-12 flex flex-col w-5/6 md:w-4/6 border-r border-slate-800'>
             <div className='py-6 sm:py-24'>
