@@ -44,3 +44,19 @@ body {
     display: none;
   } /* Bring the cursor above other elements */
 }
+
+
+.skip-link {
+  position: absolute;
+  left: -9999px; /* Move off-screen */
+  top: auto; /* Position off-screen */
+  width: 1px; /* Set a small width */
+  height: 1px; /* Set a small height */
+  overflow: hidden; /* Hide the link content */
+}
+
+.skip-link:focus {
+  position: static; /* Return to normal flow when focused */
+  width: auto; /* Restore width */
+  height: auto; /* Restore height */
+}

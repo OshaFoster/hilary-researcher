@@ -14,14 +14,14 @@ const titles = [
 ];
 
 // <div className='flex flex-wrap flex-row max-w-sm  md:max-w-2xl p-12 pr-7'>
-//   <h1 className='text-xl sm:text-2xl font-extralight whitespace-normal'>{item.title}</h1>
+//   <h2 className='text-xl sm:text-2xl font-extralight whitespace-normal'>{item.title}</h2>
 function Title({ item }) {
   const ref = useRef(null); // Adjust the start and end values
 
   return (
     <section className='flex flex-row border-b border-slate-800'>
       <div className='flex flex-wrap flex-row max-w-sm  md:max-w-xl pl-6 sm:pl-12 p-7'>
-        <h1 className='text-xl sm:text-2xl font-extralight'>{item.title}</h1>
+        <h2 className='text-xl sm:text-2xl font-extralight'>{item.title}</h2>
       </div>
       <div className='flex flex-row pt-7' ref={ref}>
         <motion.h2
@@ -74,8 +74,11 @@ export default function Home() {
     <>
       <CustomCursor />
 
-      <div className='flex flex-col w-screen bg-zinc-50'>
-        <div className='border-r border-b border-slate-800 flex flex-row h-90vh'>
+      <main className='flex flex-col w-screen bg-zinc-50'>
+        <div
+          id='main-content'
+          className='border-r border-b border-slate-800 flex flex-row h-90vh'
+        >
           <div className='px-6 sm:px-12 flex flex-col w-5/6 md:w-4/6 border-r border-slate-800'>
             <div className='py-6 sm:py-24'>
               <h2 className='text-xl sm:text-2xl font-light'>
@@ -107,9 +110,9 @@ export default function Home() {
               <h1 className='font-anticSlab text-6xl sm:text-6xl text-lime-700'>
                 Hilary Watts
               </h1>
-              <h1 className='text-2xl sm:text-2xl  font-anticSlab text-lime-700'>
+              <h2 className='text-2xl sm:text-2xl  font-anticSlab text-lime-700'>
                 Medical Content Researcher
-              </h1>
+              </h2>
             </motion.div>
             <div className='py-6 sm:py-24'>
               <h2 className='text-xl sm:text-2xl font-light'>
@@ -119,32 +122,36 @@ export default function Home() {
               </h2>
             </div>
           </div>
-          <div className='w-2/3 md:w-2/6 bg-with-image bg-center flex items-center justify-center'></div>
+          <div
+            role='img'
+            aria-label='Nature Photo'
+            className='w-2/3 md:w-2/6 bg-with-image bg-center flex items-center justify-center'
+          ></div>
         </div>
 
-        <div className='flex flex-col'>
+        <div id='background' className='flex flex-col'>
           <div className='flex flex-col  md:flex-row border-b border-slate-800'>
             <div className='px-6 sm:px-12 w-full sm:border-b md:border-b-0 border-slate-800 md:w-1/2 bg-pink-700 sm:bg-zinc-50'>
-              <p className='top-5 sticky text-2xl my-5  text-zinc-50 sm:text-slate-800'>
+              <h2 className='top-5 sticky text-2xl my-5  text-zinc-50 sm:text-slate-800'>
                 Education
-              </p>
+              </h2>
             </div>
 
             <div className='flex flex-col w-full md:w-1/2 border-l border-slate-800'>
               <div className='border-b border-slate-800 p-7 pl-6 sm:pl-12'>
-                <h1 className='text-xl sm:text-2xl font-extralight '>
+                <h2 className='text-xl sm:text-2xl font-extralight '>
                   BA Biology
-                </h1>
+                </h2>
               </div>
               <div className='p-7 pl-6 sm:pl-12 border-b border-slate-800'>
-                <h1 className='text-xl sm:text-2xl font-extralight'>
+                <h2 className='text-xl sm:text-2xl font-extralight'>
                   MA Counseling Psychology
-                </h1>
+                </h2>
               </div>
               <div className='flex flex-row p-7  pl-6 sm:pl-12'>
-                <h1 className='text-xl sm:text-2xl font-extralight pr-6'>
+                <h2 className='text-xl sm:text-2xl font-extralight pr-6'>
                   Student of Naturopathic Medicine
-                </h1>
+                </h2>
 
                 <motion.h2
                   initial={{ opacity: 0, y: -80 }}
@@ -160,9 +167,9 @@ export default function Home() {
 
           <div className='flex flex-col  md:flex-row '>
             <div className='pl-6 sm:pl-12 w-full md:w-1/2 sm:border-b border-slate-800 bg-pink-700 sm:bg-zinc-50'>
-              <p className='top-5 sticky text-2xl my-5 text-turquise text-zinc-50 sm:text-slate-800'>
+              <h2 className='top-5 sticky text-2xl my-5 text-turquise text-zinc-50 sm:text-slate-800'>
                 Professional
-              </p>
+              </h2>
             </div>
 
             <div className='flex flex-col  w-full md:w-1/2 border-l border-slate-800'>
@@ -180,10 +187,13 @@ export default function Home() {
           </h2>
           <EmailLink />
         </div>
-        <div className='flex justify-self-end justify-center border-t border-slate-800 px-12'>
+        <div
+          id='footer'
+          className='flex justify-self-end justify-center border-t border-slate-800 px-12'
+        >
           <p className='my-6 sm:my-3'>website by osha foster</p>
         </div>
-      </div>
+      </main>
     </>
   );
 }
