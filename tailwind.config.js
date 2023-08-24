@@ -14,6 +14,7 @@ module.exports = {
       },
       fontFamily: {
         anticSlab: ['Antic Slab', 'normal'],
+        zillaSlab: ['Zilla Slab', 'normal'],
       },
     },
   },

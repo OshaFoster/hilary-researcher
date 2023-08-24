@@ -9,6 +9,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Zilla Slab';
+  src: url('public/fonts/ZillaSlab-Light.ttf') format('truetype'); /* TTF font format */
+  font-weight: 300; /* Specify the default font weight */
+  font-style: normal;
+}
+
 .bg-with-image {
   background-image: url('public/img1.jpg');
   background-size: cover;
@@ -44,7 +51,6 @@ body {
     display: none;
   } /* Bring the cursor above other elements */
 }
-
 
 .skip-link {
   position: absolute;

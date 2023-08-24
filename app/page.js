@@ -28,7 +28,7 @@ function Title({ item }) {
           initial={{ opacity: 0, y: -80 }}
           whileInView={{ opacity: 1, y: 1 }}
           transition={{ duration: 0.3, delay: 0.8 }}
-          className='text-xl sm:text-2xl font-anticSlab whitespace-nowrap  font-medium text-pink-700 mr-10'
+          className='text-xl sm:text-2xl font-zillaSlab whitespace-nowrap  font-medium text-pink-700 mr-10'
         >
           {item.years}
         </motion.h2>
@@ -58,7 +58,7 @@ export default function Home() {
         className='contact bg-zinc-50 h-16 flex justify-center items-center border w-80 sm:w-96 mt-16 relative p-6 border-solid border-r-4 border-b-4 border-slate-700 hover:border-slate-800 sm:hover:border-emerald-800'
         href={mailtoLink}
       >
-        <p className='text-2xl font-medium font-anticSlab text-pink-700'>
+        <p className='text-2xl font-medium font-zillaSlab text-pink-700'>
           Contact Me
         </p>
       </motion.a>
@@ -107,10 +107,10 @@ export default function Home() {
               transition={{ duration: 0.3, delay: 0.4 }}
               className=' md:py-6 top-0 sticky z-40 bg-zinc-50 my-1'
             >
-              <h1 className='font-anticSlab text-6xl sm:text-6xl text-lime-700'>
+              <h1 className='font-zillaSlab text-6xl sm:text-6xl text-lime-700'>
                 Hilary Watts
               </h1>
-              <h2 className='text-2xl sm:text-2xl  font-anticSlab text-lime-700'>
+              <h2 className='text-2xl sm:text-2xl  font-zillaSlab text-lime-700'>
                 Medical Content Researcher
               </h2>
             </motion.div>
@@ -157,7 +157,7 @@ export default function Home() {
                   initial={{ opacity: 0, y: -80 }}
                   whileInView={{ opacity: 1, y: 1 }}
                   transition={{ duration: 0.3, delay: 0.8 }}
-                  className='text-xl sm:text-2xl font-anticSlab font-medium whitespace-nowrap text-pink-700 mr-10'
+                  className='text-xl sm:text-2xl font-zillaSlab font-medium whitespace-nowrap text-pink-700 mr-10'
                 >
                   2 y
                 </motion.h2>
@@ -182,7 +182,7 @@ export default function Home() {
         </div>
 
         <div className='flex h-screen flex-col justify-center items-center '>
-          <h2 className='text-3xl font-anticSlab mx-12 text-center text-lime-700'>
+          <h2 className='text-3xl font-zillaSlab mx-12 text-center text-lime-700'>
             Find out how I can help you put the best evidence into context.
           </h2>
           <EmailLink />
