@@ -94,9 +94,9 @@ export default function Home() {
                 <span className='font-normal text-pink-700'>
                   evidence-based health care
                 </span>{' '}
-                requires knowing{' '}
+                requires knowing what the{' '}
                 <span className='font-normal text-pink-700'>
-                  what the evidence means
+                  evidence means
                 </span>{' '}
                 so you can answer specific questions about health.
               </h2>
@@ -117,11 +117,11 @@ export default function Home() {
             <div className='py-6 sm:py-24'>
               <h2 className='text-xl sm:text-2xl font-light'>
                 I compile high-quality medical research and summarize it in
-                everyday language. I work for writers and individuals with a
-                vested interest in{' '}
-                <span className='font-normal text-pink-700'>
-                  what the studies mean for life on the ground.
+                {' '}<span className='font-normal text-pink-700'>
+                  everyday language.
                 </span>{' '}
+                I work for writers and individuals with a vested interest in
+                what the studies mean for life on the ground.
               </h2>
             </div>
           </div>
