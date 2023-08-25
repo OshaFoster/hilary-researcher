@@ -26,7 +26,7 @@ function Title({ item }) {
       <div className='flex flex-row pt-7' ref={ref}>
         <motion.h2
           initial={{ opacity: 0, y: -80 }}
-          whileInView={{ opacity: 1, y: 1 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, delay: 0.8 }}
           className='text-xl sm:text-2xl font-zillaSlab whitespace-nowrap  font-medium text-pink-700 mr-10'
         >
@@ -52,8 +52,8 @@ export default function Home() {
 
     return (
       <motion.a
-        initial={{ opacity: 0, y: -100 }}
-        whileInView={{ opacity: 1, y: 1 }}
+        initial={{ opacity: 0, y: -80 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3, delay: 0.8 }}
         className='contact bg-zinc-50 h-16 flex justify-center items-center border w-80 sm:w-96 mt-16 relative p-6 border-solid border-r-4 border-b-4 border-slate-700 hover:border-slate-800 sm:hover:border-emerald-800'
         href={mailtoLink}
