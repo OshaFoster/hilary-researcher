@@ -52,7 +52,7 @@ export default function Home() {
 
     return (
       <motion.a
-        initial={{ opacity: 0, y: -80 }}
+        initial={{ opacity: 0, y: -100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3, delay: 0.8 }}
         className='contact bg-zinc-50 h-16 flex justify-center items-center border w-80 sm:w-96 mt-16 relative p-6 border-solid border-r-4 border-b-4 border-slate-700 hover:border-slate-800 sm:hover:border-emerald-800'
