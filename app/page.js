@@ -118,9 +118,8 @@ export default function Home() {
               <h2 className='text-xl sm:text-2xl font-light'>
                 I compile high-quality medical research and summarize it in
                 {' '}<span className='font-normal text-pink-700'>
-                  everyday language.
-                </span>{' '}
-                I work for writers and individuals with a vested interest in
+                  everyday language
+                </span>. I work for writers and individuals with a vested interest in
                 what the studies mean for life on the ground.
               </h2>
             </div>

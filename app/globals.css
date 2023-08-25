@@ -11,7 +11,7 @@
 
 @font-face {
   font-family: 'Zilla Slab';
-  src: url('public/fonts/ZillaSlab-Light.ttf') format('truetype'); /* TTF font format */
+  src: url('public/fonts/ZillaSlab-Regular.ttf') format('truetype'); /* TTF font format */
   font-weight: 300; /* Specify the default font weight */
   font-style: normal;
 }
