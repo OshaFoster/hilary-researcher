@@ -34,7 +34,7 @@ body {
 }
 
 .contact:hover:before {
-  content: 'reasearcher@hilarywatts.com';
+  content: 'researcher@hilarywatts.com';
   font-size: 20px;
 }
 
