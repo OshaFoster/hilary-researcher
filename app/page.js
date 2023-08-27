@@ -44,7 +44,7 @@ export default function Home() {
   });
 
   const EmailLink = () => {
-    const recipientEmail = 'researcher@hilary.com';
+    const recipientEmail = 'researcher@hilarywatts.com';
 
     const mailtoLink = `mailto:${recipientEmail}`;
 
