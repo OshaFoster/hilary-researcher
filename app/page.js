@@ -1,7 +1,6 @@
 'use client';
 import { useRef } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
-import CustomCursor from './components/customCursor';
 const titles = [
   {
     title: 'Medical content researcher & reviewer — The Ruscio Institute',
@@ -10,18 +9,17 @@ const titles = [
   { title: 'Biologist', years: '10 y' },
   { title: 'Editor & writer', years: '11 y' },
   { title: 'Journalist', years: '2 y' },
-  { title: 'Marriage & Family Therapist trainee', years: '1 y' },
 ];
 
-// <div className='flex flex-wrap flex-row max-w-sm  md:max-w-2xl p-12 pr-7'>
-//   <h2 className='text-xl sm:text-2xl font-extralight whitespace-normal'>{item.title}</h2>
 function Title({ item }) {
   const ref = useRef(null); // Adjust the start and end values
 
   return (
     <section className='flex flex-row border-b border-slate-800'>
       <div className='flex flex-wrap flex-row max-w-sm  md:max-w-xl pl-6 sm:pl-12 p-7'>
-        <h2 className='text-xl sm:text-2xl font-extralight'>{item.title}</h2>
+        <h2 className='text-xl sm:text-2xl whitespace-none max-w-[250px] sm:max-w-[380px]  font-extralight'>
+          {item.title}
+        </h2>
       </div>
       <div className='flex flex-row pt-7' ref={ref}>
         <motion.h2
@@ -65,15 +63,8 @@ export default function Home() {
     );
   };
 
-  {
-    /* <div className='border-r flex flex-row h-90vh bg-with-image'>
-          <div className='px-12 flex flex-col w-5/6 md:w-4/6 m-auto my-12 h-5/6 border-r bg-zinc-50 border-slate-800'> */
-  }
-
   return (
     <>
-      <CustomCursor />
-
       <main className='flex flex-col w-screen bg-zinc-50'>
         <div
           id='main-content'
@@ -116,10 +107,11 @@ export default function Home() {
             </motion.div>
             <div className='py-6 sm:py-24'>
               <h2 className='text-xl sm:text-2xl font-light'>
-                I compile high-quality medical research and summarize it in
-                {' '}<span className='font-normal text-pink-700'>
+                I compile high-quality medical research and summarize it in{' '}
+                <span className='font-normal text-pink-700'>
                   everyday language
-                </span>. I work for writers and individuals with a vested interest in
+                </span>
+                . I work for writers and individuals with a vested interest in
                 what the studies mean for life on the ground.
               </h2>
             </div>
@@ -149,20 +141,6 @@ export default function Home() {
                 <h2 className='text-xl sm:text-2xl font-extralight'>
                   MA Counseling Psychology
                 </h2>
-              </div>
-              <div className='flex flex-row p-7  pl-6 sm:pl-12'>
-                <h2 className='text-xl sm:text-2xl font-extralight pr-6'>
-                  Student of Naturopathic Medicine
-                </h2>
-
-                <motion.h2
-                  initial={{ opacity: 0, y: -80 }}
-                  whileInView={{ opacity: 1, y: 1 }}
-                  transition={{ duration: 0.3, delay: 0.8 }}
-                  className='text-xl sm:text-2xl font-zillaSlab font-medium whitespace-nowrap text-pink-700 mr-10'
-                >
-                  2 y
-                </motion.h2>
               </div>
             </div>
           </div>
