@@ -7,7 +7,7 @@ const titles = [
     years: '3 y',
   },
   { title: 'Biologist', years: '10 y' },
-  { title: 'Editor & writer', years: '11 y' },
+  { title: 'Editor & writer', years: '20 y' },
   { title: 'Journalist', years: '2 y' },
 ];
 
@@ -102,14 +102,15 @@ export default function Home() {
                 Hilary Watts
               </h1>
               <h2 className='text-2xl sm:text-2xl  font-zillaSlab text-lime-700'>
-                Medical Content Researcher
+                Medical Content Researcher and Editor
               </h2>
             </motion.div>
             <div className='py-6 sm:py-24'>
               <h2 className='text-xl sm:text-2xl font-light'>
                 I compile high-quality medical research and summarize it in{' '}
                 <span className='font-normal text-pink-700'>
-                  everyday language
+                  everyday language, and I edit health-related content for accuracy and accessibility
+
                 </span>
                 . I work for writers and individuals with a vested interest in
                 what the studies mean for life on the ground.
