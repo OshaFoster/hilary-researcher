@@ -109,7 +109,11 @@ export default function Home() {
               <h2 className='text-xl sm:text-2xl font-light'>
                 I compile high-quality medical research and summarize it in{' '}
                 <span className='font-normal text-pink-700'>
-                  everyday language, and I edit health-related content for accuracy and accessibility
+                  everyday language
+                </span>
+                , and I edit health-related content for{' '} 
+                <span className='font-normal text-pink-700'>
+                  accuracy and accessibility
 
                 </span>
                 . I work for writers and individuals with a vested interest in
