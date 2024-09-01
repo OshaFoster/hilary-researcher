@@ -3,7 +3,7 @@ import { useRef } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
 const titles = [
   {
-    title: 'Medical content researcher & reviewer — The Ruscio Institute',
+    title: 'Medical literature interpreter & blog editor — The Ruscio Institute',
     years: '3 y',
   },
   { title: 'Biologist', years: '10 y' },
@@ -83,7 +83,7 @@ export default function Home() {
                 </span>{' '}
                 situations. Yet, practicing{' '}
                 <span className='font-normal text-pink-700'>
-                  evidence-based health care
+                  evidence-based healthcare
                 </span>{' '}
                 requires knowing what the{' '}
                 <span className='font-normal text-pink-700'>
@@ -107,10 +107,6 @@ export default function Home() {
             </motion.div>
             <div className='py-6 sm:py-24'>
               <h2 className='text-xl sm:text-2xl font-light'>
-                I curate high-quality medical literature and interpret it in {' '}
-                <span className='font-normal text-pink-700'>
-                  everyday language {' '}
-                </span>
                 I curate high-quality medical literature and interpret it in
                 everyday language. I also edit evidence-based health content for {' '}
                 <span className='font-normal text-pink-700'>
