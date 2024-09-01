@@ -21,7 +21,7 @@ function Title({ item }) {
           {item.title}
         </h2>
       </div>
-      <div className='flex flex-row pt-7' ref={ref}>
+      <div className='flex flex-row pt-7 ' ref={ref}>
         <motion.h2
           initial={{ opacity: 0, y: -80 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -101,23 +101,23 @@ export default function Home() {
               <h1 className='font-zillaSlab text-6xl sm:text-6xl text-lime-700'>
                 Hilary Watts
               </h1>
-              <h2 className='text-2xl sm:text-2xl  font-zillaSlab text-lime-700'>
-                Medical Content Researcher and Editor
+              <h2 className='text-2xl sm:text-2xl font-zillaSlab text-lime-700'>
+                Medical Literature Interpreter & Health Content Editor
               </h2>
             </motion.div>
             <div className='py-6 sm:py-24'>
               <h2 className='text-xl sm:text-2xl font-light'>
-                I compile high-quality medical research and summarize it in{' '}
+                I curate high-quality medical literature and interpret it in {' '}
                 <span className='font-normal text-pink-700'>
-                  everyday language
+                  everyday language {' '}
                 </span>
-                , and I edit health-related content for{' '} 
+                I curate high-quality medical literature and interpret it in
+                everyday language. I also edit evidence-based health content for {' '}
                 <span className='font-normal text-pink-700'>
-                  accuracy and accessibility
-
+                  accuracy, accessibility, and SEO compatibility. {' '}
                 </span>
-                . I work for writers and individuals with a vested interest in
-                what the studies mean for life on the ground.
+                I work for writers and individuals with a vested interest in
+                what the studies mean for life on the ground. {' '}
               </h2>
             </div>
           </div>
@@ -148,7 +148,7 @@ export default function Home() {
                 </h2>
               </div>
             </div>
-          </div> 
+          </div>
 
           <div className='flex flex-col  md:flex-row '>
             <div className='pl-6 sm:pl-12 w-full md:w-1/2 sm:border-b border-slate-800 bg-pink-700 sm:bg-zinc-50'>
