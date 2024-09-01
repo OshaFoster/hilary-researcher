@@ -1,13 +1,29 @@
 'use client';
 import { useRef } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
+
+const calcYears = (start) => {
+  const currentDate = new Date();
+  const startDate = new Date(start);
+
+  // Calculate the difference in milliseconds
+  const timeDiff = currentDate - startDate;
+
+  // Convert milliseconds to years
+  const years = timeDiff / (1000 * 60 * 60 * 24 * 365.25);
+
+  // Return the rounded down number of years
+  return Math.floor(years) + ' y';
+};
+
 const titles = [
   {
-    title: 'Medical literature interpreter & blog editor — The Ruscio Institute',
-    years: '3 y',
+    title:
+      'Medical literature interpreter & blog editor — The Ruscio Institute',
+    years: calcYears('2020-10-01'),
   },
   { title: 'Biologist', years: '10 y' },
-  { title: 'Editor & writer', years: '20 y' },
+  { title: 'Editor & writer', years: calcYears('2004-01-01') },
   { title: 'Journalist', years: '2 y' },
 ];
 
@@ -107,13 +123,16 @@ export default function Home() {
             </motion.div>
             <div className='py-6 sm:py-24'>
               <h2 className='text-xl sm:text-2xl font-light'>
-                I curate high-quality medical literature and interpret it in
-                everyday language. I also edit evidence-based health content for {' '}
+                I curate high-quality medical literature and{' '}
                 <span className='font-normal text-pink-700'>
-                  accuracy, accessibility, and SEO compatibility. {' '}
-                </span>
+                  interpret it in everyday language.
+                </span>{' '}
+                I also edit evidence-based health content for{' '}
+                <span className='font-normal text-pink-700'>
+                  accuracy, accessibility, and SEO compatibility.
+                </span>{' '}
                 I work for writers and individuals with a vested interest in
-                what the studies mean for life on the ground. {' '}
+                what the studies mean for life on the ground.
               </h2>
             </div>
           </div>
